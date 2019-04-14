@@ -1,0 +1,119 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Titillium Web', sans-serif;
+}
+/* #main-page div {
+    background-color: darkcyan;
+    border: 1px solid black;
+} */
+#main-page, #page2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1024px;
+    margin: 0 auto;
+}
+/* ---------------main-header start--------------- */
+.main-header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.logo i {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    /* text-align: center; */
+    font-size: 50px;
+}
+.logo {
+    position: relative;
+    width: 35%;
+    height: 80px;
+}
+.main-nav {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: auto;
+}
+/* ---------------main-header end--------------- */
+/* ------------------nav--------------------------- */
+.nav-top {
+    height: auto;
+}
+.far, .fas {
+    margin-right: 10px;
+}
+.main-nav ul {
+    background-color: rgb(219, 219, 219);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 0;
+    overflow: hidden;
+}
+.main-nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+.main-nav ul li:last-child {
+    float: right;
+}
+li a {
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: rgb(43, 117, 255);
+}
+  
+.active {
+    background-color: #4CAF50;
+}
+/* --------------------nav end---------------------- */
+/* --------------------main-img3 start------------ */
+.main-img3 {
+    padding: 30px 0;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+}
+.img1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.img-hov {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    /* width: 100%; */
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .2);
+
+}
+/* .foto {
+    position: relative;
+} */
+.img-hov:hover {
+        opacity: 1;
+        margin: 5px;
+}
+.img-desc {
+    text-align: center;
+    padding: 0 10px;
+}
